@@ -10,11 +10,7 @@ const initialState = {
   bad: 0
 }
 export default class App extends Component {
-  state = {
-  good: 0,
-  neutral: 0,
-  bad: 0
-  }
+  state = initialState
   
   onHandleClick = (e) => {
     const name = e.target.name
