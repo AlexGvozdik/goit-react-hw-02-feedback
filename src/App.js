@@ -14,7 +14,6 @@ export default class App extends Component {
   
   onHandleClick = (e) => {
     const name = e.target.name
-    console.log(name)
     this.setState((prev) => ({
       ...prev,
       [name]:this.state[name]+1,
@@ -39,7 +38,6 @@ export default class App extends Component {
     const arrFeedback = Object.keys(this.state)
     const { good, neutral, bad } = this.state;
 
-    console.log(`arrFeedback`, arrFeedback)
     return (
       <>
         <Section title='Please leave feedback'>
